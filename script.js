@@ -23,6 +23,7 @@ let drawTreeMap = () => {
   createTreeMap(hierarchy);
 
   let movieTiles = hierarchy.leaves();
+  console.log(movieTiles);
 
   let block = canvas
     .selectAll('g')
@@ -77,6 +78,7 @@ let drawTreeMap = () => {
         .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
       tooltip.html('$ ' + revenue + '<hr />' + movie['data']['name']);
+
       tooltip.attr('data-value', movie['data']['value']);
     })
     .on('mouseout', (movie) => {
