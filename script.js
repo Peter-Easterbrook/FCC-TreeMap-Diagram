@@ -23,7 +23,6 @@ let drawTreeMap = () => {
   createTreeMap(hierarchy);
 
   let movieTiles = hierarchy.leaves();
-  console.log(movieTiles);
 
   let block = canvas
     .selectAll('g')
