@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #8b92a5 black;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Remove default margin */
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+li {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  color: #fff;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+  overflow: auto;
+  background: rgb(47, 55, 63);
+  background: linear-gradient(
+    0deg,
+    rgba(47, 55, 63, 1) 0%,
+    rgba(136, 149, 163, 1) 100%
+  );
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #8b92a5;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #b5ccf6;
+}
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+h1,
+h4 {
+  margin-bottom: 0.6rem;
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 1rem 1.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+svg {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+  border: 1px solid #fff;
+  border-radius: 0.4rem;
+}
+#canvas {
+  min-height: 600px;
+  min-width: 1000px;
+  fill: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+g {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#tooltip {
+  visibility: hidden;
+  color: #fff;
+  font-size: 1rem;
+  height: auto;
+  width: auto;
+  margin-bottom: 1rem;
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+#tooltip hr {
+  width: '80%';
+  color: #485460;
+  background-color: #485460;
+  height: 1px;
+  border: none;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 300;
+  fill: #fff;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+#legend {
+  background-color: #000;
+  font-size: 1rem;
+  text-align: center;
+  min-height: 19rem;
+  max-width: 10rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+.tile:hover {
+  fill: #000;
+}

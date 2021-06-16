@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+
+    <script src="script.js " defer></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>FCC Treemap Diagram</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Highest Grossing Movies</h1>
+    <h4 id="description">Top 95 Highest Grossing Movies Grouped by Revenue</h4>
+
+    <div id="tooltip"></div>
+    <div class="wrapper">
+      <svg id="canvas"></svg>
+      <svg id="legend">
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="0"
+            width="30"
+            height="30"
+            fill="#d84800"
+          ></rect>
+          <text x="60" y="20" fill="white">Adventure</text>
+        </g>
+
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="40"
+            width="30"
+            height="30"
+            fill="#002c95"
+          ></rect>
+          <text x="60" y="60" fill="white">Action</text>
+        </g>
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="80"
+            width="30"
+            height="30"
+            fill="#ffc100"
+          ></rect>
+          <text x="60" y="100" fill="white">Biography</text>
+        </g>
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="120"
+            width="30"
+            height="30"
+            fill="#e16e48"
+          ></rect>
+          <text x="60" y="140" fill="white">Animation</text>
+        </g>
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="160"
+            width="30"
+            height="30"
+            fill="#ba0500"
+          ></rect>
+          <text x="60" y="180" fill="white">Comedy</text>
+        </g>
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="200"
+            width="30"
+            height="30"
+            fill="#467dff"
+          ></rect>
+          <text x="60" y="220" fill="white">Drama</text>
+        </g>
+        <g>
+          <rect
+            class="legend-item"
+            x="10"
+            y="240"
+            width="30"
+            height="30"
+            fill="#5f009c"
+          ></rect>
+          <text x="60" y="260" fill="white">Family</text>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
