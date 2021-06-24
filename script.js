@@ -18,7 +18,7 @@ let drawTreeMap = () => {
       return node2['value'] - node1['value'];
     });
 
-  let createTreeMap = d3.treemap().size([1000, 600]);
+  let createTreeMap = d3.treemap().size([1000, 600]).paddingInner(1);
 
   createTreeMap(hierarchy);
 
