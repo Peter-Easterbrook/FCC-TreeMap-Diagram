@@ -35,10 +35,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <canvas id="thpace"></canvas>
     <h1 id="title">Top 95 Highest Grossing Movies by Revenue</h1>
     <!-- <h4 id="description">Top 95 Highest Grossing Movies by Revenue</h4> -->
-    <div id="tooltip"></div>
     <br />
+    <div id="tooltip"></div>
     <br />
     <div class="wrapper">
       <svg id="canvas"></svg>
@@ -123,5 +124,16 @@
         </g>
       </svg>
     </div>
+    <script src="thpace.min.js"></script>
+    <script>
+      const d3canvas = document.getElementById('thpace');
+
+      const d3settings = {
+        colors: ['#000', '#0069d2', '#000'],
+        triangleSize: 65,
+      };
+
+      ThpaceGL.create(d3canvas, d3settings);
+    </script>
   </body>
 </html>
